@@ -7,6 +7,7 @@ import 'dart:io';
 
 void main () {
   final input = stdin.readLineSync();
+  //nullを返す可能性があるものは??でデフォルト値を入れておく
   final a = int.tryParse(input ?? '');
 
   
