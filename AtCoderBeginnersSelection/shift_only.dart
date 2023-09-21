@@ -10,6 +10,8 @@ import 'dart:math';
 void main() {
   const int divisor = 2;
 
+  final input = stdin.readLineSync();
+  final n = int.tryParse(input ?? '');
 
   final numbers = stdin.readLineSync()?.split(" ").map(int.parse).toList() ?? [];
 
@@ -23,5 +25,5 @@ void main() {
     }
     counts.add(count);
   }
-  print(counts.reduce(min));
+  print(counts.reduce((a, b) => a < b ? a : b));
 }
