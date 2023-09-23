@@ -7,4 +7,6 @@ void main () {
   final inputs = stdin.readLineSync()?.split(" ").map(int.tryParse).toList();
   final a = inputs?[0];
   final b = inputs?[1];
+
+  ((a ?? 0)*(b ?? 0)).isEven ? print("Even") : print("Odd");
 }
