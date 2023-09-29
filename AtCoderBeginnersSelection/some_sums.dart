@@ -8,7 +8,7 @@ void main() {
   final b = inputs?[2];
 
   final array = <int>[];
-  for(int i = 0; i <= 20; i++){
+  for(int i = 1; i <= (n ?? 0); i++){
     final sum = splits(i).reduce((p,n) => p+n);
     if ((a ?? 0) <= sum && sum <= (b ?? 0)){
       array.add(i);
@@ -19,7 +19,7 @@ void main() {
 
 List<int> splits(int i){
   final array = <int>[];
-  for(int j = 0; j <= i; j++) {
+  for(int j = 1; j <= i; j *= 10) {
     final above = i ~/ (j * 10);
     array.add((i - (above * j * 10)) ~/ j);
   }
