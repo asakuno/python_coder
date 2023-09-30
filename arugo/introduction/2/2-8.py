@@ -19,3 +19,6 @@ for vote in S:
 # 最終的な投票数を答える
 for count in vote_count:
     print(count)
+
+# リファクタ
+print(*vote_count)
