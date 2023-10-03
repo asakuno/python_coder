@@ -7,7 +7,7 @@ class Tortoise:
     def aging(self):
         self.age += 1
 
-class TortoiseWizard(Tortoise): # Tortoise クラスを継承するクラス
+class TortoiseWizard(Tortoise): # Tortoise クラスを継承する クラス
     # ここに年齢 self.age を引数 age に変更するメソッド set_age を書いてください
     def set_age(self, age):
         self.age = age
